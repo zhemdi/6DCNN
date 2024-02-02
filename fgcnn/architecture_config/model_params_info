@@ -1,0 +1,30 @@
+version 1
+Conv_20 ConvAgg_30
+20 12 5
+version 2
+Conv_30 ConvAgg_40 ConvAgg_30
+20 10 5
+version 3
+Conv_40 ConvAgg_50
+40 20 10 5
+version 4
+Conv_30 Conv_40 Conv_30
+20 10 5
+version 5
+
+10 7 3
+version 6
+Conv_30 Conv_40 Conv_20 Conv_10 Conv_5
+
+version 7
+Conv_30 ConvAgg_40 ConvAgg_20 ConvAgg_10 ConvAgg_5
+
+version 8
+Conv_30 ConvAgg_40 ConvAgg_20 ConvAgg_30 ConvAgg_15 ConvAgg_20 ConvAgg_15
+10 7 4
+version 9
+Conv_40
+20 10 5
+version 10
+Conv_15
+10 5

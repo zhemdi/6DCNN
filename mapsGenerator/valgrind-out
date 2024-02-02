@@ -1,0 +1,122 @@
+==83376== Memcheck, a memory error detector
+==83376== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
+==83376== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==83376== Command: ./build/maps_generator -i /home/zhemd/oriented3dCNN/Harmonics\ Graph\ Net/mapsGenerator/test_model3 -t /home/zhemd/oriented3dCNN/Harmonics\ Graph\ Net/mapsGenerator/test_model3 -g General_file -x Expansions_file -b bm -f fsm -s ssm -e Edges_file -d Real_directions_file env /bin/sh /tmp/Microsoft-MIEngine-Cmd-czyz7mn1.nbs
+==83376== Parent PID: 52003
+==83376== 
+--83376-- 
+--83376-- Valgrind options:
+--83376--    --leak-check=full
+--83376--    --log-file=valgrind-out
+--83376--    -v
+--83376-- Contents of /proc/version:
+--83376--   Linux version 4.4.0-173-generic (buildd@lgw01-amd64-037) (gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.12) ) #203-Ubuntu SMP Wed Jan 15 02:55:01 UTC 2020
+--83376-- 
+--83376-- Arch and hwcaps: AMD64, LittleEndian, amd64-cx16-lzcnt-rdtscp-sse3-avx-avx2-bmi
+--83376-- Page sizes: currently 4096, max supported 4096
+--83376-- Valgrind library directory: /usr/lib/valgrind
+--83376-- Reading syms from /home/zhemd/oriented3dCNN/Harmonics Graph Net/mapsGenerator/build/maps_generator
+--83376-- Reading syms from /lib/x86_64-linux-gnu/ld-2.23.so
+--83376--   Considering /lib/x86_64-linux-gnu/ld-2.23.so ..
+--83376--   .. CRC mismatch (computed 2b0241bb wanted 2b26b6ff)
+--83376--   Considering /usr/lib/debug/lib/x86_64-linux-gnu/ld-2.23.so ..
+--83376--   .. CRC is valid
+--83376-- Reading syms from /usr/lib/valgrind/memcheck-amd64-linux
+--83376--   Considering /usr/lib/valgrind/memcheck-amd64-linux ..
+--83376--   .. CRC mismatch (computed eea41ea9 wanted 2009db78)
+--83376--    object doesn't have a symbol table
+--83376--    object doesn't have a dynamic symbol table
+--83376-- Scheduler: using generic scheduler lock implementation.
+--83376-- Reading suppressions file: /usr/lib/valgrind/default.supp
+==83376== embedded gdbserver: reading from /tmp/vgdb-pipe-from-vgdb-to-83376-by-zhemd-on-???
+==83376== embedded gdbserver: writing to   /tmp/vgdb-pipe-to-vgdb-from-83376-by-zhemd-on-???
+==83376== embedded gdbserver: shared mem   /tmp/vgdb-pipe-shared-mem-vgdb-83376-by-zhemd-on-???
+==83376== 
+==83376== TO CONTROL THIS PROCESS USING vgdb (which you probably
+==83376== don't want to do, unless you know exactly what you're doing,
+==83376== or are doing some strange experiment):
+==83376==   /usr/lib/valgrind/../../bin/vgdb --pid=83376 ...command...
+==83376== 
+==83376== TO DEBUG THIS PROCESS USING GDB: start GDB like this
+==83376==   /path/to/gdb ./build/maps_generator
+==83376== and then give GDB the following command
+==83376==   target remote | /usr/lib/valgrind/../../bin/vgdb --pid=83376
+==83376== --pid is optional if only one valgrind process is running
+==83376== 
+--83376-- REDIR: 0x401cf40 (ld-linux-x86-64.so.2:strlen) redirected to 0x3809e181 (???)
+--83376-- Reading syms from /usr/lib/valgrind/vgpreload_core-amd64-linux.so
+--83376--   Considering /usr/lib/valgrind/vgpreload_core-amd64-linux.so ..
+--83376--   .. CRC mismatch (computed 2567ccf6 wanted 49420590)
+--83376--    object doesn't have a symbol table
+--83376-- Reading syms from /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so
+--83376--   Considering /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so ..
+--83376--   .. CRC mismatch (computed 0e27c9a8 wanted ac585421)
+--83376--    object doesn't have a symbol table
+==83376== WARNING: new redirection conflicts with existing -- ignoring it
+--83376--     old: 0x0401cf40 (strlen              ) R-> (0000.0) 0x3809e181 ???
+--83376--     new: 0x0401cf40 (strlen              ) R-> (2007.0) 0x04c31020 strlen
+--83376-- REDIR: 0x401b890 (ld-linux-x86-64.so.2:index) redirected to 0x4c30bc0 (index)
+--83376-- REDIR: 0x401bab0 (ld-linux-x86-64.so.2:strcmp) redirected to 0x4c320d0 (strcmp)
+--83376-- REDIR: 0x401dca0 (ld-linux-x86-64.so.2:mempcpy) redirected to 0x4c35270 (mempcpy)
+--83376-- Reading syms from /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21
+--83376--   Considering /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21 ..
+--83376--   .. CRC mismatch (computed eb112249 wanted d0509bc9)
+--83376--    object doesn't have a symbol table
+--83376-- Reading syms from /lib/x86_64-linux-gnu/libm-2.23.so
+--83376--   Considering /lib/x86_64-linux-gnu/libm-2.23.so ..
+--83376--   .. CRC mismatch (computed 139cd6a9 wanted 1d3df7e7)
+--83376--   Considering /usr/lib/debug/lib/x86_64-linux-gnu/libm-2.23.so ..
+--83376--   .. CRC is valid
+--83376-- Reading syms from /lib/x86_64-linux-gnu/libgcc_s.so.1
+--83376--   Considering /lib/x86_64-linux-gnu/libgcc_s.so.1 ..
+--83376--   .. CRC mismatch (computed b9a68419 wanted 29d51b00)
+--83376--    object doesn't have a symbol table
+--83376-- Reading syms from /lib/x86_64-linux-gnu/libpthread-2.23.so
+--83376--   Considering /usr/lib/debug/.build-id/3d/b0b0ee6244f5b89ab1d535f91b17d162cc1701.debug ..
+--83376--   .. build-id is valid
+--83376-- Reading syms from /lib/x86_64-linux-gnu/libc-2.23.so
+--83376--   Considering /lib/x86_64-linux-gnu/libc-2.23.so ..
+--83376--   .. CRC mismatch (computed 53ae885f wanted a963d847)
+--83376--   Considering /usr/lib/debug/lib/x86_64-linux-gnu/libc-2.23.so ..
+--83376--   .. CRC is valid
+--83376-- REDIR: 0x5987a80 (libc.so.6:strcasecmp) redirected to 0x4a286f0 (_vgnU_ifunc_wrapper)
+--83376-- REDIR: 0x5983300 (libc.so.6:strcspn) redirected to 0x4a286f0 (_vgnU_ifunc_wrapper)
+--83376-- REDIR: 0x5989d70 (libc.so.6:strncasecmp) redirected to 0x4a286f0 (_vgnU_ifunc_wrapper)
+--83376-- REDIR: 0x5985770 (libc.so.6:strpbrk) redirected to 0x4a286f0 (_vgnU_ifunc_wrapper)
+--83376-- REDIR: 0x5985b00 (libc.so.6:strspn) redirected to 0x4a286f0 (_vgnU_ifunc_wrapper)
+--83376-- REDIR: 0x59871cb (libc.so.6:memcpy@GLIBC_2.2.5) redirected to 0x4a286f0 (_vgnU_ifunc_wrapper)
+--83376-- REDIR: 0x5985480 (libc.so.6:rindex) redirected to 0x4c308a0 (rindex)
+--83376-- REDIR: 0x597c180 (libc.so.6:malloc) redirected to 0x4c2db20 (malloc)
+--83376-- REDIR: 0x59837a0 (libc.so.6:strlen) redirected to 0x4c30f60 (strlen)
+--83376-- REDIR: 0x5986c70 (libc.so.6:__GI_memcmp) redirected to 0x4c33b90 (__GI_memcmp)
+--83376-- REDIR: 0x5981d50 (libc.so.6:strcmp) redirected to 0x4a286f0 (_vgnU_ifunc_wrapper)
+--83376-- REDIR: 0x59975f0 (libc.so.6:__strcmp_sse2_unaligned) redirected to 0x4c31f90 (strcmp)
+--83376-- REDIR: 0x598c470 (libc.so.6:memcpy@@GLIBC_2.14) redirected to 0x4a286f0 (_vgnU_ifunc_wrapper)
+--83376-- REDIR: 0x5a45f60 (libc.so.6:__memcpy_avx_unaligned) redirected to 0x4c324a0 (memcpy@@GLIBC_2.14)
+--83376-- REDIR: 0x4ec7e60 (libstdc++.so.6:operator new(unsigned long)) redirected to 0x4c2e080 (operator new(unsigned long))
+--83376-- REDIR: 0x5986c30 (libc.so.6:bcmp) redirected to 0x4a286f0 (_vgnU_ifunc_wrapper)
+--83376-- REDIR: 0x5a664f0 (libc.so.6:__memcmp_sse4_1) redirected to 0x4c33cd0 (__memcmp_sse4_1)
+--83376-- REDIR: 0x597cd80 (libc.so.6:calloc) redirected to 0x4c2faa0 (calloc)
+--83376-- REDIR: 0x4ec5f10 (libstdc++.so.6:operator delete(void*)) redirected to 0x4c2f1e0 (operator delete(void*))
+--83376-- REDIR: 0x59868e0 (libc.so.6:memchr) redirected to 0x4c32170 (memchr)
+--83376-- REDIR: 0x5a45a70 (libc.so.6:__memmove_avx_unaligned) redirected to 0x4c32230 (memcpy@GLIBC_2.2.5)
+--83376-- REDIR: 0x597c540 (libc.so.6:free) redirected to 0x4c2ed80 (free)
+==83376== 
+==83376== HEAP SUMMARY:
+==83376==     in use at exit: 75,696 bytes in 52 blocks
+==83376==   total heap usage: 983 allocs, 931 frees, 133,556 bytes allocated
+==83376== 
+==83376== Searching for pointers to 52 not-freed blocks
+==83376== Checked 150,800 bytes
+==83376== 
+==83376== LEAK SUMMARY:
+==83376==    definitely lost: 0 bytes in 0 blocks
+==83376==    indirectly lost: 0 bytes in 0 blocks
+==83376==      possibly lost: 0 bytes in 0 blocks
+==83376==    still reachable: 75,696 bytes in 52 blocks
+==83376==         suppressed: 0 bytes in 0 blocks
+==83376== Reachable blocks (those to which a pointer was found) are not shown.
+==83376== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==83376== 
+==83376== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==83376== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

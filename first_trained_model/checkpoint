@@ -1,0 +1,2 @@
+model_checkpoint_path: "/home/zhemd/oriented3dCNN/Model_102k/model.ckptfirst_att/model.ckpt"
+all_model_checkpoint_paths: "/home/zhemd/oriented3dCNN/Model_102k/model.ckptfirst_att/model.ckpt"

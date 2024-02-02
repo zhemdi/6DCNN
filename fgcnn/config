@@ -1,0 +1,9 @@
+# Config file for maps generator
+
+MAP_GENERATOR_PATH = /home/zhemd/Functional_GCN/functional-gcn/mapsGenerator/maps_generator
+SAVE_DIR = /home/zhemd/Functional_GCN/functional-gcn/Models
+DATA_FILE_PATH = /home/zhemd/data/generated_data/
+STRUCTURES_FILE_PATH = /media/datadrive/data/CASP/data/
+TENSORBOARD_PATH =  /media/datadrive/data/zhemd/tensorboard/
+LS_TRAINING_FILE = /home/zhemd/Functional_GCN/functional-gcn/save/harm_net_loss/
+
