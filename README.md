@@ -3,8 +3,13 @@
 <div align="center">
   ![alt text](illustration/Workflow-03-1.png)
 </div>
+Method presented at Paper Title: "6DCNN with roto-translational convolution filters for volumetric data processing" at AAAI 2022.
 
-This repository contains the implementation of the 6D Convolutional Neural Network (6DCNN) 
+**Authors:** Dmitrii Zhemchuzhnikov, Ilia Igashov, Sergei Grudinin
+
+**Affiliation:** Univ. Grenoble Alpes, CNRS, Grenoble INP, LJK, 38000 Grenoble, France
+
+The paper is available at [AAAI Digital Library](https://ojs.aaai.org/index.php/AAAI/article/view/18668).
 
 ## Abstract
 6DCNN is designed to address the challenges of processing volumetric data, utilizing SE(3)-equivariant message-passing and nonlinear activation operations constructed in the Fourier space. This approach reduces computational complexity and improves the efficiency of recognizing spatial patterns. The model has been evaluated on several datasets from recent CASP protein structure prediction challenges, demonstrating significant improvements over baseline architectures and state-of-the-art methods.
