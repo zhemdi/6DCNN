@@ -1,7 +1,7 @@
 # 6DCNN for Volumetric Data Processing
 
 <div align="center">
-  ![alt text](illustration/Workflow-03-1.png)
+  <img src="illustration/Workflow-03-1.png" alt="alt text" />
 </div>
 Method presented at Paper Title: "6DCNN with roto-translational convolution filters for volumetric data processing" at AAAI 2022.
 
